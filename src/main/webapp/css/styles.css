@@ -1,0 +1,185 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+
+#mainImg{
+	text-align:center;
+	margin-left: 5%;
+	margin-right: auto;
+}
+
+.mainArea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: lavender;
+	box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.75);
+	border-width: 0PX;
+	border-style: solid;
+	border-color: lavender;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+}
+
+.menu-container {
+	position: relative;
+	z-index: 10;
+	height: 47px;
+	overflow: visible;
+	background-color: #27ae60;
+	border-style: solid;
+	border-width: 0PX;
+	border-color: lavender;
+	border: none;
+	overflow: visible;
+}
+
+ul {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	display: block;
+	list-style-type: disc;
+}
+
+div.menu {
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+ul.menu-tabs li {
+	float: left;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	min-height: 16PX;
+}
+
+.menu-tabs li.activelink {
+	background-color: lavender;
+	font-weight: normal;
+	font-size: 18PX;
+	color: black;
+	border-width: 0PX;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border: none;
+}
+
+.menu-tabs li {
+	background-color: #27ae60;
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-image: none;
+	margin: 0PX 0PX 0PX 0PX;
+}
+
+/*
+font-family: nobile, sans-serif;
+font-family: open-sans-condensed, sans-serif;
+font-family: poiret-one, sans-serif;
+font-family: lobster, serif;
+font-family: jura, sans-serif;
+*/
+
+.menu-tabs li a:hover {
+	background-color: lavender;
+	color: black;
+	border-width: 0PX;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border: none;
+}
+
+.menu-tabs li a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding: 15PX 15PX 15PX 15PX;
+	line-height: 17PX;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 20PX;
+/* 	font-family: Arial, Helvetica, sans-serif; */
+	font-family: jura, sans-serif;
+	font-style: normal;
+}
+
+li {
+	display: list-item;
+}
+
+.btn-submit {
+	font-size: 16px;
+	width: 15%;
+	height: 10%;
+	font-family: open-sans-condensed, sans-serif;
+	margin-left: 7%;
+}
+#addTaskForm, #searchTaskForm{
+	width: 40%;
+}
+#summary, #assignee,  #period {
+	width: 50%;
+}
+.startDate, .endDate {
+	width: 50%;
+}
+
+/* #addTaskForm { */
+/* 	width: 40%; */
+/* } */
+
+
+/* #addTaskForm label{ */
+/* 	font-size: 20px; */
+/* 	font-family: open-sans-condensed, sans-serif; */
+/* 	font-weight: normal; */
+/* 	float: left; */
+
+/* } */
+
+
+/* #addTaskForm .text-input { */
+/* 	width: 50%; */
+/* 	height: 30px; */
+/* 	padding: 2px 2px 2px 2px; */
+/* 	margin-bottom: 10px; */
+/* 	margin-left: 20px; */
+/* 	display: block; */
+/* 	font-size: 18px; */
+/* 	font-family: open-sans-condensed, sans-serif; */
+
+
+/* } */
+
+
+.content-area {
+	overflow: hidden;
+}
+.content-area-block {
+	margin: 10px 10px 10px 10px;
+}
+
+#content {
+	height: 600px;
+	background-color: #b0e0e6;
+}
+
+/* .content-block { */
+/* 	display: inline-block; */
+/* } */
