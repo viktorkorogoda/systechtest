@@ -25,18 +25,6 @@
 	<mvc:resources mapping="/css/**" location="/css/" />
 	<mvc:resources mapping="/**" location="/" />
 
-<!-- 	<bean id="loginDelegate" class="com.viktarkarahoda.photohelper.delegate.LoginDelegate"> -->
-<!-- 		<property name="userService" ref="userService"></property> -->
-<!-- 	</bean> -->
-
-<!-- 	<bean id="userService" class="com.viktarkarahoda.photohelper.service.impl.UserServiceImpl"> -->
-<!-- 		<property name="userDao" ref="userDao"></property> -->
-<!-- 	</bean> -->
-
-<!-- 	<bean name="userDao" class="com.viktarkarahoda.photohelper.dao.impl.UserDaoImpl"> -->
-<!-- 		<property name="dataSourceDao" ref="dataSourceDao"></property> -->
-<!-- 	</bean> -->
-
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/</value>

@@ -26,7 +26,6 @@ public class IndexController {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("index");
 		return model;
-
 	}
 
 	@RequestMapping(value = "/addTask", method = RequestMethod.POST)
@@ -34,23 +33,21 @@ public class IndexController {
 		ModelAndView model = new ModelAndView("search");
 		boolean checkDate = true;
 
-		if (task.getStartDate() != "" && task.getEndDate() != "") {
-			checkDate = DateUtil.dateCheck(task.getStartDate(), task.getEndDate());
-		}
-		if (task.getStartDate() != "") {
-			checkDate = DateUtil.dateCheck(task.getStartDate());
-		}
-		if (task.getEndDate() != "") {
-			checkDate = DateUtil.dateCheck(task.getStartDate(), task.getEndDate());
-		}
-		if (checkDate == true) {
-			taskService.addNewUser(task);
-			model.setViewName("redirect:search");
-		} else {
-			model.addObject("wrongDate", "Enter a valid date");
+		if ((task.getStartDate() == "") || (task.getEndDate() == "") || (task.getSummary() == "") || (task.getAssignee() == "")) {
+			model.addObject("wrongDate", "Fill the all filds");
 			model.setViewName("index");
+		} else {
+			if (task.getStartDate() != "" && task.getEndDate() != "") {
+				checkDate = DateUtil.dateCheck(task.getStartDate(), task.getEndDate());
+			}
+			if (checkDate == true) {
+				taskService.addNewUser(task);
+				model.setViewName("redirect:search");
+			} else {
+				model.addObject("wrongDate", "Enter a valid date");
+				model.setViewName("index");
+			}
 		}
 		return model;
 	}
-
 }
